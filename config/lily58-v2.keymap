@@ -14,6 +14,10 @@
                 init-delay-ms = <50>;
         };
 
+		&kscan0 {
+    debounce-period = <10>;
+};
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -71,4 +75,4 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
-};
+};1
