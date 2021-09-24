@@ -10,16 +10,16 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
-
+/ {
         ext-power {
                 init-delay-ms = <50>;
         };
+};
+
 
 		&kscan0 {
     debounce-period = <10>;
 };
-
-
 
 
 / {
