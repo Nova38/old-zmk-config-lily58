@@ -17,9 +17,9 @@
 };
 
 
-// 		&kscan0 {
-//     debounce-period = <10>;
-// };
+		&kscan0 {
+    debounce-period = <10>;
+};
 
 
 / {
@@ -82,4 +82,4 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
-};1
+};
