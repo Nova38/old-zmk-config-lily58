@@ -34,7 +34,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (lily58 Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=lily58_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config" -DDTC_OVERLAY_FILE="${GITHUB_WORKSPACE}/config/left_pins.overlay;${GITHUB_WORKSPACE}/config/lily58.keymap"
+        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=lily58_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config" 
       - name: lily58 DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
@@ -48,7 +48,7 @@ jobs:
           name: firmware
           path: lily58_left_nice_nano_v2.uf2
       - name: West Build (lily58 Right)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=lily58_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=lily58_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config" -DDTC_OVERLAY_FILE="${GITHUB_WORKSPACE}/config/pin_fix.overlay;${GITHUB_WORKSPACE}/config/lily58.keymap"
 
       - name: lily58 Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
