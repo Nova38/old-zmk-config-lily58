@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "spadin.zmk-tools",
+        "trond-snekvik.kconfig-lang"
+    ]
+}
