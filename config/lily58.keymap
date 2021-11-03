@@ -24,7 +24,7 @@
 
 
 &kscan0 {
-    debounce-period = <20>;
+    debounce-period = <12>;
 };
 
 
