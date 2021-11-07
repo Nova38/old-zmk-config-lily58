@@ -23,9 +23,9 @@
 };
 
 
-&kscan0 {
-    debounce-period = <12>;
-};
+// &kscan0 {
+//     debounce-period = <12>;
+// };
 
 
 / {
