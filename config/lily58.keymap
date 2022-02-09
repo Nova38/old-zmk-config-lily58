@@ -23,7 +23,9 @@
                 init-delay-ms = <50>;
         };
 };
-
+&caps_word {
+    continue-list = <UNDERSCORE>;
+};
 
 // &kscan0 {
 //     debounce-period = <12>;
