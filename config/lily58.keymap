@@ -31,6 +31,9 @@
 //     debounce-period = <12>;
 // };
 
+&sk {
+    release-after-ms = <500>;
+};
 
 / {
 
