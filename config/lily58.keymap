@@ -26,9 +26,9 @@
     continue-list = <UNDERSCORE>;
 };
 
-// &kscan0 {
-//     debounce-period = <12>;
-// };
+&kscan0 {
+    debounce-scan-period-ms = <2>;
+ };
 
 // &sk {
 //     release-after-ms = <500>;
